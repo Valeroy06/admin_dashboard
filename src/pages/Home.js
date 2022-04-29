@@ -1,12 +1,5 @@
-import Sidebar from "../components/Sidebar/Sidebar";
+const Home = () => <div className="home">
+    <div className="homeContainer">container</div>
+</div>
 
-const Home = () => {
-    return (
-        <div className="home">
-            <Sidebar />
-            <div className="homeContainer">container</div>
-            </div>
-    );
-}
-
-export default Sidebar;
+export default Home;

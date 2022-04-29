@@ -2,11 +2,12 @@
 import Sidebar from "../components/Sidebar";
 
 
-function Default() {
+function Default(Component) {
     return (
         <>
             
             <Sidebar />
+            <Component/>
             
         </>
     );
