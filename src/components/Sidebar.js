@@ -52,6 +52,22 @@ const top =  {
         link: routes.home
     }
 }
+const bottom =[
+    {
+        image: Images.home_icon,
+        navLink: {
+            label: 'Home',
+            link: routes.home
+        }
+    },
+    {
+        image: Images.settings_icon,
+        navLink: {
+            label: 'Settings',
+            link: routes.settings
+        }
+    }
+]
 const Sidebar = () => <div className={styles.sidebar}>
     <div className={styles.top}>
         <b><SideBarLink {...top} width={'auto'} /></b>
@@ -60,15 +76,9 @@ const Sidebar = () => <div className={styles.sidebar}>
         {center.map(link => <SideBarLink {...link} />)}
     </div>
     <div className={styles.bottom}>
-        <a className={styles.settings}>
-            <img src={Images.settings_icon} alt="settings_icon" />
-            <span>Settings</span>
-        </a>
-        <a className={styles.home}>
-            <img src={Images.home_icon} alt="home_icon" />
-            <span>Home</span>
-        </a>
-    </div>
+    {bottom.map(link => <SideBarLink {...link} />)}
 </div>
+</div>
+
 
 export default Sidebar;
