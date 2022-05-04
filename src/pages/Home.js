@@ -21,21 +21,23 @@ const inputs = [
     placeholder:"Full Name",
     errorMessage:"Bitch,too short!",
     label:"Full Name",
+    pattern:"^[A-Za-z]{5,16}$",
+    required:true,
 },
 {
     id:2,
     name:"email",
     type:"text",
     placeholder:"Email",
-    errorMessage:"dasds",
+    errorMessage:"invalid email",
     label:"Email Address",
+    required:true,
 },
 {
     id:3,
     name:"birthday",
     type:"date",
     placeholder:"Birthday",
-    errorMessage:"",
     label:"Date Of Birth",
 },
 {
@@ -43,7 +45,9 @@ const inputs = [
     name:"phoneNumber",
     type:"number",
     placeholder:"Phone Number",
+    // errorMessage:"invalid number",
     label:"Phone Number",
+    // required:true,
 },
 ];
 const handleSubmit = (e) => {

@@ -16,8 +16,13 @@ input{
 }
 span{
     font-size: 14px;
+    display: none;
     color: red;
     // padding: 3px;
     text-align: right;
+
+    input:invalid{
+        display: block;
+    }
 }
 }
