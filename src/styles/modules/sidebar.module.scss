@@ -30,3 +30,12 @@
 
     .bottom {}
 }
+
+@media only screen and (max-width: 390px) {
+    .sidebar{
+        display: none;
+        
+
+
+    }
+}

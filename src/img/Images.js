@@ -8,6 +8,9 @@ import home_icon from "./home_icon.svg";
 import notification from "./notification.svg";
 import man from "./man.svg";
 import pencil from "./pencil.svg";
+import search from "./search.svg";
+import sort from "./sort.svg";
+import filter from "./filter.svg";
 
 
 
@@ -16,6 +19,7 @@ import pencil from "./pencil.svg";
 
 
 const Images = {
-    logo,referrals_icon,transactions_icon,payouts_icon,settings_icon,home_icon,charts_icon,notification,man,pencil
+    logo,referrals_icon,transactions_icon,payouts_icon,settings_icon,home_icon,charts_icon,notification,man,pencil,
+    search,sort,filter
 }
 export default Images;

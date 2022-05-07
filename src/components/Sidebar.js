@@ -21,7 +21,7 @@ const center = [{
     navLink: {
         label: 'Charts',
         link: routes.charts
-    }
+    },
 },
 {
     image: Images.referrals_icon,
@@ -68,7 +68,10 @@ const bottom =[
         }
     }
 ]
+
+
 const Sidebar = () => <div className={styles.sidebar}>
+    
     <div className={styles.top}>
         <b><SideBarLink {...top} width={'auto'} /></b>
     </div>
