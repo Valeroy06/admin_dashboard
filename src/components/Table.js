@@ -11,88 +11,88 @@ const List = () => {
             img: Images.man,
             ticketdetails: "Contact Email not Linked",
             update: "Updated 1day ago",
-            customer: "Tome Cruise",
+            customer: "Tom Cruise",
             lastupdate: "On 24.05.2019",
             date: "May 26,2019",
             time: "6.30",
-            Priority: "high",
+            Priority: "HIGH",
         },
         {
             id: 2,
             img: Images.man,
-            ticketdetails: "Contact Email not Linked",
+            ticketdetails: "Adding Images to Featured Posts",
             update: "Updated 1day ago",
-            customer: "Tome Cruise",
+            customer: "Chris Evans",
             lastupdate: "On 24.05.2019",
             date: "May 26,2019",
             time: "6.30",
-            Priority: "low",
+            Priority: "LOW",
         },
         {
             id: 3,
             img: Images.man,
-            ticketdetails: "Contact Email not Linked",
+            ticketdetails: "When will I be charged this month?",
             update: "Updated 1day ago",
-            customer: "Tome Cruise",
+            customer: "Matt Damon",
             lastupdate: "On 24.05.2019",
             date: "May 26,2019",
             time: "6.30",
-            Priority: "high",
+            Priority: "HIGH",
         },
         {
             id: 4,
             img: Images.man,
-            ticketdetails: "Contact Email not Linked",
-            update: "Updated 1day ago",
-            customer: "Tome Cruise",
+            ticketdetails: "Payment not going through",
+            update: "Updated 2days ago",
+            customer: "Robert Downey",
             lastupdate: "On 24.05.2019",
             date: "May 26,2019",
             time: "6.30",
-            Priority: "normal",
+            Priority: "NORMAL",
         },
         {
             id: 5,
             img: Images.man,
-            ticketdetails: "Contact Email not Linked",
-            update: "Updated 1day ago",
-            customer: "Tome Cruise",
+            ticketdetails: "Unable to add replies",
+            update: "Updated 2days ago",
+            customer: "Christian Bale",
             lastupdate: "On 24.05.2019",
             date: "May 26,2019",
             time: "6.30",
-            Priority: "high",
+            Priority: "HIGH",
         },
         {
             id: 6,
             img: Images.man,
-            ticketdetails: "Contact Email not Linked",
-            update: "Updated 1day ago",
-            customer: "Tome Cruise",
+            ticketdetails: "Downtime since last week",
+            update: "Updated 4days ago",
+            customer: "Henry Cavil",
             lastupdate: "On 24.05.2019",
             date: "May 26,2019",
             time: "6.30",
-            Priority: "normal"
+            Priority: "NORMAL"
         },
         {
             id: 7,
             img: Images.man,
-            ticketdetails: "Contact Email not Linked",
-            update: "Updated 1day ago",
-            customer: "Tome Cruise",
+            ticketdetails: "Referral Bonus",
+            update: "Updated 4days ago",
+            customer: "Sam Smith",
             lastupdate: "On 24.05.2019",
             date: "May 26,2019",
             time: "6.30",
-            Priority: "low",
+            Priority: "LOW",
         },
         {
             id: 8,
             img: Images.man,
-            ticketdetails: "Contact Email not Linked",
-            update: "Updated 1day ago",
-            customer: "Tome Cruise",
+            ticketdetails: "How do I change my password?",
+            update: "Updated 6days ago",
+            customer: "Steve Rogers",
             lastupdate: "On 24.05.2019",
             date: "May 26,2019",
             time: "6.30",
-            Priority: "normal",
+            Priority: "NORMAL",
         },
     ]
     return (
@@ -110,19 +110,21 @@ const List = () => {
                     <tr key={row.id}>
                         <td className='tix'>
                             <img src={row.img} className='im'alt="man" />
-                            {row.ticketdetails}<br/>
-                            {row.update}
+                           <div> {row.ticketdetails}<br/>
+                          <small className='tan'>{row.update}</small></div>
                         </td>
                         <td className='customer'>
                             {row.customer}<br />
-                            {row.lastupdate}
+                            <small className='tan'>{row.lastupdate}</small>
                         </td>
                         
                         <td className='date'>
                             {row.date}<br />
-                            {row.time}
+                            <small className='tan'>{row.time}</small>
                         </td>
-                        <td>{row.Priority}</td>
+                        <td>
+                           <span className={`Priority ${row.Priority}`}> {row.Priority}</span>
+                            </td>
                         <td> <img src={Images.options} className="options" alt="options" /></td>
                     </tr>
 

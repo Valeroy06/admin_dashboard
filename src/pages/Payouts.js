@@ -5,7 +5,7 @@ import Table from "../components/Table";
 
 const Payouts = () => <div className="pay">
 
-    <div className="header">
+    <div className="head">
         <h2>Payouts</h2>
         <span id="sea">
             <img src={Images.search} className="search" alt="search" />
