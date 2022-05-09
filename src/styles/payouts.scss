@@ -36,7 +36,7 @@
     }
     .container{
         background-color: #FFFFFF;
-        height: 80vh;
+        height: 83vh;
 
          .payout{
         display: flex;
@@ -47,6 +47,21 @@
         .sort{
             padding-left: 90px;
         }
+    }
+    .customer{
+       
+    }
+    .tix{
+        display: flex;
+        align-items: center;
+        padding: 2px 0;
+        
+        .im{
+            border-radius: 50px;
+            margin-right: 8px;
+            
+        }
+        
     }
     }
    
@@ -75,4 +90,5 @@ p{
         }
     }
 }
+
 }

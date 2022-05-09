@@ -11,6 +11,8 @@ import pencil from "./pencil.svg";
 import search from "./search.svg";
 import sort from "./sort.svg";
 import filter from "./filter.svg";
+import options from "./options.svg";
+
 
 
 
@@ -20,6 +22,6 @@ import filter from "./filter.svg";
 
 const Images = {
     logo,referrals_icon,transactions_icon,payouts_icon,settings_icon,home_icon,charts_icon,notification,man,pencil,
-    search,sort,filter
+    search,sort,filter,options
 }
 export default Images;

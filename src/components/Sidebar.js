@@ -76,10 +76,10 @@ const Sidebar = () => <div className={styles.sidebar}>
         <b><SideBarLink {...top} width={'auto'} /></b>
     </div>
     <div className={styles.center}>
-        {center.map(link => <SideBarLink {...link} />)}
+        {center.map((link,index) => <SideBarLink key={index} {...link} />)}
     </div>
     <div className={styles.bottom}>
-    {bottom.map(link => <SideBarLink {...link} />)}
+    {bottom.map((link,index) => <SideBarLink key={index} {...link} />)}
 </div>
 </div>
 
