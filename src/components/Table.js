@@ -1,6 +1,6 @@
 import React from 'react'
 import Images from "../img/Images";
-import { TableHTMLAttributes } from 'react';
+// import { TableHTMLAttributes } from 'react';
 import styles from "../styles/modules/table.module.scss"
 
 
