@@ -47,7 +47,7 @@ const inputs = [
     placeholder:"Phone Number",
     // errorMessage:"invalid number",
     label:"Phone Number",
-    // required:true,
+    required:true,
 },
 ];
 const handleSubmit = (e) => {
@@ -81,7 +81,7 @@ return (
             ))}
             
             
-            <button>submit</button>
+            <button type="submit">save</button>
         </form>
         </div>
     </div>

@@ -1,9 +1,7 @@
-import "../settings.scss"
+import React from 'react'
 
-const Settings = () => {
-    return (
-        <div>Settings</div>
-    );
-}
+const Settings = () => <div className="charts">
+hhh
+</div>
 
-export default Settings;
+export default Settings

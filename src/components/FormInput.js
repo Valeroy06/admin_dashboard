@@ -1,15 +1,10 @@
 import styles from "../styles/modules/forminput.module.scss"
 
-const FormInput = (props) => {
-    const { label, errorMessage, onChange, id, ...inputProps} = props;
-  return (
+const FormInput = ({ label, errorMessage, onChange, id, ...inputProps}) => 
     <div className={styles.FormInput}>
-        <label>{label}</label>
-        <input  {...inputProps} onChange={onChange}
+        <label htmlFor={id}>{label}</label>
+        <input id={id} {...inputProps} onChange={onChange}
         />
         <span>{errorMessage}</span>
     </div>
-  )
-}
-
 export default FormInput

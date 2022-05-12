@@ -42,6 +42,7 @@
         // height: 86vh;
         padding: 0 10px;
         cursor: pointer;
+        // font-size: 15px;
 
         .payout {
             display: flex;
@@ -81,7 +82,7 @@
         .Priority {
             padding: 5px;
             border-radius: 50px;
-            font-size: 7px;
+            font-size: 10px;
 
             &.HIGH {
                 color: white;
