@@ -1,7 +1,9 @@
 import React from 'react'
+import Header from "../components/Header";
+
 
 const Settings = () => <div className="charts">
-hhh
+{/* <Header /> */}<p>hhh</p>
 </div>
 
 export default Settings
