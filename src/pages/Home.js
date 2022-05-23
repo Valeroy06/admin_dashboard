@@ -1,8 +1,6 @@
 import Images from "../img/Images";
 import FormInput from "../components/FormInput";
-import { useState } from "react";
-
-
+import { useState, useRef } from "react";
 
 
 const Home = () => {
@@ -11,6 +9,7 @@ const Home = () => {
         email: "",
         birthday: "",
         phonenumber: "",
+        image: Images.person
     })
 
     const inputs = [
@@ -54,24 +53,30 @@ const Home = () => {
         e.preventDefault();
     };
 
+    const ref = useRef()
     const onChange = (e) => {
         setValues({ ...values, [e.target.name]: e.target.value })
     };
+    const swapImage = e => {
+        let newImage = URL.createObjectURL(e.target.files[0]) || Images.person
+        ref.current.src = newImage
+        setValues({ ...values, image: newImage })
+    }
 
     return (
         <div className="home">
             <div className="header">
                 <h2>My Profile</h2>
                 <img src={Images.notification} className="notif" alt="notification" /><br />
-                <span>eshibobo <img src={Images.man} className="man" alt="man" /></span>
+                <span>eshibobo <img src={values.image} className="man" alt="person" /></span>
             </div>
 
             <div className="flex">
                 <h4>Edit Profile</h4>
                 <div>
-                    <label htmlFor="file">
-                        
-                        <img src={Images.man} className="man" alt="man" />
+                    <label htmlFor="image">
+                        <input type="file" id="image" style={{ display: "none" }} onChange={swapImage} accept=".png, .jpg, .jpeg, .svg" />
+                        <img src={values.image} ref={ref} className="man" alt="person" />
                         <img src={Images.pencil} className="pencil" alt="pencil" />
                     </label>
                     <form onSubmit={handleSubmit}>
