@@ -11,7 +11,7 @@ const Payouts = () => <div className="pay">
             <img src={Images.search} className="search" alt="search" />
             <img src={Images.notification} className="notif" alt="notification" /></span>
         <br />
-        <span><p>eshibobo</p> <img src={Images.man} className="man" alt="man" /></span>
+        <span><p>eshibobo</p> <img src={Images.person} className="man" alt="person" /></span>
     </div>
     <div className="container">
         <div className="payout">

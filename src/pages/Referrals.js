@@ -1,7 +1,7 @@
 import React from 'react'
-
+import Dummy from './Dummy'
 const Referrals = () => <div className="charts">
-hhh
+<Dummy params={'referrals'} />
 </div>
 
 export default Referrals

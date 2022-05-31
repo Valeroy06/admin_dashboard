@@ -7,6 +7,7 @@ function Default(Component) {
         < >
             <div className="def">
             <Sidebar />
+            {/* <Header /> */}
             <Component/>
             </div>
         </>

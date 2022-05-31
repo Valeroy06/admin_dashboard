@@ -1,8 +1,9 @@
 
 import React from 'react'
-
-const Charts = () => <div className="charts">
-hhh
-</div>
+import Dummy from './Dummy'
+const Charts = () =>
+    <div className="charts">
+        <Dummy params={'ade'}/>
+    </div>
 
 export default Charts

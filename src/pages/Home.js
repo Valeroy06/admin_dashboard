@@ -1,7 +1,7 @@
 import Images from "../img/Images";
 import FormInput from "../components/FormInput";
 import { useState, useRef } from "react";
-
+import Dummy from "./Dummy";
 
 const Home = () => {
     const [values, setValues] = useState({
@@ -66,7 +66,7 @@ const Home = () => {
     return (
         <div className="home">
             <div className="header">
-                <h2>My Profile</h2>
+                <Dummy params={"My profile"} />
                 <img src={Images.notification} className="notif" alt="notification" /><br />
                 <span>eshibobo <img src={values.image} className="man" alt="person" /></span>
             </div>
