@@ -66,9 +66,7 @@ const Home = () => {
     return (
         <div className="home">
             <div className="header">
-                <Dummy params={"My profile"} />
-                <img src={Images.notification} className="notif" alt="notification" /><br />
-                <span>eshibobo <img src={values.image} className="man" alt="person" /></span>
+            <Dummy title="My Profile" notImg={Images.notification} searchImg={Images.search} profileImg={Images.person} text="eshibobo"/>
             </div>
 
             <div className="flex">

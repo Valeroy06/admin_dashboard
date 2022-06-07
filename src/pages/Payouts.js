@@ -1,17 +1,12 @@
 import Images from "../img/Images";
 import Table from "../components/Table";
-
+import Dummy from './Dummy'
 
 
 const Payouts = () => <div className="pay">
 
     <div className="head">
-        <h2>Payouts</h2>
-        <span id="sea">
-            <img src={Images.search} className="search" alt="search" />
-            <img src={Images.notification} className="notif" alt="notification" /></span>
-        <br />
-        <span><p>eshibobo</p> <img src={Images.person} className="man" alt="person" /></span>
+    <Dummy title="Payouts" notImg={Images.notification} searchImg={Images.search} profileImg={Images.person} text="eshibobo"/>
     </div>
     <div className="container">
         <div className="payout">
