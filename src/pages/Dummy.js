@@ -1,5 +1,7 @@
 import React from 'react'
+import { useImage } from '../components/ImageContext'
 const Dummy = ({ title, notImg, searchImg, text, profileImg }) => {
+  const {values } = useImage()
   return (
     <header style={{
       display: "flex",
@@ -28,7 +30,7 @@ const Dummy = ({ title, notImg, searchImg, text, profileImg }) => {
         
       }}>
         <span>{text}</span>
-        <img src={profileImg} alt="" style={{
+        <img src={values.image} alt="" style={{
 
           width: "50px",
           height: "50px",

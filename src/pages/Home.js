@@ -1,16 +1,11 @@
 import Images from "../img/Images";
 import FormInput from "../components/FormInput";
-import { useState, useRef } from "react";
-import Dummy from "./Dummy";
 
+import Dummy from "./Dummy";
+import { useImage } from "../components/ImageContext";
 const Home = () => {
-    const [values, setValues] = useState({
-        fullname: "",
-        email: "",
-        birthday: "",
-        phonenumber: "",
-        image: Images.person
-    })
+    const {values, onChange, swapImage,ref} = useImage()
+    
 
     const inputs = [
         {
@@ -53,15 +48,7 @@ const Home = () => {
         e.preventDefault();
     };
 
-    const ref = useRef()
-    const onChange = (e) => {
-        setValues({ ...values, [e.target.name]: e.target.value })
-    };
-    const swapImage = e => {
-        let newImage = URL.createObjectURL(e.target.files[0]) || Images.person
-        ref.current.src = newImage
-        setValues({ ...values, image: newImage })
-    }
+    
 
     return (
         <div className="home">

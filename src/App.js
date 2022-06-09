@@ -14,12 +14,13 @@ import Charts from './pages/Charts'
 import Referrals from './pages/Referrals'
 import Transactions from './pages/Transactions'
 import Settings from './pages/Settings'
-
+import {ImageProvider} from './components/ImageContext'
 
 
 function App() {
   return (
     <div className="App">
+      <ImageProvider>
       <Router>
         <Routes>
         <Route path={routes.payouts} element={Default(Payouts)}/>
@@ -31,6 +32,7 @@ function App() {
           <Route path={routes.settings} element={<Default/>}/>     
         </Routes>
      </Router>
+     </ImageProvider>
     </div>
   );
 }
