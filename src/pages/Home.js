@@ -4,8 +4,8 @@ import FormInput from "../components/FormInput";
 import Dummy from "./Dummy";
 import { useImage } from "../components/ImageContext";
 const Home = () => {
-    const {values, onChange, swapImage,ref} = useImage()
-    
+    const { values, onChange, swapImage, ref, setValues } = useImage()
+
 
     const inputs = [
         {
@@ -46,14 +46,22 @@ const Home = () => {
     ];
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log(values)
+        setValues({
+            fullName: "",
+            email: "",
+            birthday: "",
+            phoneNumber: "",
+            image: Images.person
+        })
     };
 
-    
+
 
     return (
         <div className="home">
             <div className="header">
-            <Dummy title="My Profile" notImg={Images.notification} searchImg={Images.search} profileImg={Images.person} text="eshibobo"/>
+                <Dummy title="My Profile" notImg={Images.notification} searchImg={Images.search} profileImg={Images.person} text="eshibobo" />
             </div>
 
             <div className="flex">

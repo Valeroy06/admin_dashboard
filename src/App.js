@@ -29,7 +29,7 @@ function App() {
           <Route path={routes.transactions} element={Default(Transactions)}/>
           <Route path={routes.settings} element={Default(Settings)}/>
           <Route path={routes.charts} element={Default(Charts)}/>     
-          <Route path={routes.settings} element={<Default/>}/>     
+          {/* <Route path={routes.settings} element={<Default/>}/>      */}
         </Routes>
      </Router>
      </ImageProvider>

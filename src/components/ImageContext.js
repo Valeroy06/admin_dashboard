@@ -9,10 +9,10 @@ export const useImage = () => {
 
 export const ImageProvider = ({children}) => {  
     const [values, setValues] = useState({
-    fullname: "",
+    fullName: "",
     email: "",
     birthday: "",
-    phonenumber: "",
+    phoneNumber: "",
     image: Images.person
 });
 const ref = useRef()
@@ -26,7 +26,7 @@ const ref = useRef()
     }
 
     const returnValues = {
-        values, onChange, swapImage,ref
+        values, onChange, swapImage,ref, setValues
     }
   return (
       <ImageContext.Provider value={returnValues}>
